@@ -13,7 +13,8 @@
     />
     <link rel="stylesheet" type="text/css" href="/myStyle.css">
     <script type = "text/javascript" src="submit.js"></script> 
-        <title>Interactive Rating Page</title>
+
+    <title>Interactive Rating Page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -22,6 +23,8 @@
 
   </head>
   <body>
+    <script type = "text/javascript" src="submit.js"></script> 
+
     <div class="container">
       <div class="rating-card">
 
@@ -39,13 +42,31 @@
         appreciated to help us improve our offering!
       </p>
       <div class="rating-row">
-      <button class="rating-btn"  onclick="submitRating()"  id="1" value="1">1</button>
-      <button class="rating-btn"  onclick="selectRating()"  id="2" value="2">2</button>
-      <button class="rating-btn"  onclick="selectRating()"  id="3" value="3">3</button>
-      <button class="rating-btn"  onclick="selectRating()"  id="4" value="4">4</button>
-      <button class="rating-btn"  onclick="selectRating()"  id="5" value="5">5</button>
-
-
+        <label  id="rate-1" for="rating" class="rating-btn">
+          <p id="rate-1-number">1</p>
+         <input type="radio" name="rating" class="radio-btn">
+             
+        </label>
+        <label  id="rate-2" for="rating" class="rating-btn">
+          <p id="rate-2-number">2</p>
+         <input type="radio" name="rating" class="radio-btn">
+             
+        </label>
+        <label  id="rate-3" for="rating" class="rating-btn">
+          <p id="rate-3-number">3</p>
+         <input type="radio" name="rating" class="radio-btn">
+             
+        </label>
+        <label  id="rate-4" for="rating" class="rating-btn">
+          <p id="rate-4-number">4</p>
+         <input type="radio" name="rating" class="radio-btn">
+             
+        </label>
+        <label  id="rate-5" for="rating" class="rating-btn">
+          <p id="rate-5-number">5</p>
+         <input type="radio" name="rating" class="radio-btn">
+             
+        </label>
 
       </div>
       <input type="submit" class="submit-btn" onclick="submitRating()" value="SUBMIT" />
@@ -56,12 +77,12 @@
 
             <!-- Thank you state start -->
 
-    <div id="thank-you" style="display: none" class="card-content">
+    <div id="thank-you" style="display: none;" class="card-content">
       <div style= "background-color: aquamarine; width: 30px;" >
         TY
     </div>
     <p class="rating-notice">
-      You selected Add rating here out of 5
+      You selected <p id="selected" class="rating-notice">0</p> out of 5
     </p>
     <h1 class="main-heading"> Thank you!</h1>
     <p class="subtitle-text">
