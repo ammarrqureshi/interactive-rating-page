@@ -1,0 +1,34 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+body  
+{
+  margin : 0;
+  font-family: "Overpass", sans-serif;
+}
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .rating-card{
+        background-color: blueviolet;
+        max-width: 330px;
+        position: absolute;
+        top: 50%;
+        border: 2px solid black;
+        transform: translate(0, -50%);
+        font-family: "Overpass", sans-serif;
+
+      }

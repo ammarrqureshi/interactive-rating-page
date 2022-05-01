@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="/myStyle.css">
+    <script type = "text/javascript" src="submit.js"></script> 
+        <title>Interactive Rating Page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    </style>
 
-  <!-- Rating state start -->
 
-  How did we do?
+  </head>
+  <body>
+    <div class="container">
+      <div class="rating-card">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
 
-  1 2 3 4 5
+    <!-- Rating state start -->
 
-  Submit
 
-  <!-- Rating state end -->
+    <div id="main" style="display: block" class="card-content">
+      <div style= "background-color: aquamarine; width: 30px;" >
+          S
+      </div>
+      <h1 class="main-heading">How did we do?</h1>
+      <p class="subtitle-text">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="rating-row">
+      <button class="rating-btn"  onclick="submitRating()"  id="1" value="1">1</button>
+      <button class="rating-btn"  onclick="selectRating()"  id="2" value="2">2</button>
+      <button class="rating-btn"  onclick="selectRating()"  id="3" value="3">3</button>
+      <button class="rating-btn"  onclick="selectRating()"  id="4" value="4">4</button>
+      <button class="rating-btn"  onclick="selectRating()"  id="5" value="5">5</button>
 
-  <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
 
-  Thank you!
+      </div>
+      <input type="submit" class="submit-btn" onclick="submitRating()" value="SUBMIT" />
+    </div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
 
-  <!-- Thank you state end -->
+        <!-- Rating state end -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+            <!-- Thank you state start -->
+
+    <div id="thank-you" style="display: none" class="card-content">
+      <div style= "background-color: aquamarine; width: 30px;" >
+        TY
+    </div>
+    <p class="rating-notice">
+      You selected Add rating here out of 5
+    </p>
+    <h1 class="main-heading"> Thank you!</h1>
+    <p class="subtitle-text">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+    </div>
+
+        <!-- Thank you state end -->
+
+    
   </div>
-</body>
+
+</div>
+    
+
+  
+
+
+    <div class="attribution">
+      <a
+        href="https://github.com/ammarrqureshi/interactive-rating-page.git"
+        target="_blank"
+        >View on Github</a
+      >. Coded by <a href="#">Ammar Qureshi</a>.
+    </div>
+  </body>
 </html>
