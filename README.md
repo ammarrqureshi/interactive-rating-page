@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Github URL: [Github Repo](https://github.com/ammarrqureshi/interactive-rating-page.git)
-- Live Site URL: [Vercel Site](https://your-live-site-url.com)
+- Live Site URL: [Vercel Site](https://interactive-rating-page.vercel.app/)
 
 ## My process
 1. I always start developing for mobile first (MOBILE-FIRST APPROACH)
