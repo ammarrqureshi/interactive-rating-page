@@ -21,5 +21,5 @@ function displayRating()
         
 
     }
-    document.getElementById("selected").innerHTML=selectedItem;
+    document.getElementById("selected").innerHTML= "You selected "+ selectedItem+" out of 5";
     }

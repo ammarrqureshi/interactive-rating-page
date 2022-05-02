@@ -1,9 +1,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
+* { box-sizing: border-box; }
 body  
 {
   margin : 0;
+  background-color: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
 }
 
@@ -23,12 +25,15 @@ body
 
       }
       .rating-card{
-        background-color: blueviolet;
+        background-color: #171E28;
+        min-width: 280px;
         max-width: 330px;
         position: absolute;
         top: 50%;
-        border: 2px solid black;
-        margin: 0 25px;
+        border: none;
+
+      
+        
         padding: 25px;
 
         transform: translate(0, -50%);
@@ -37,23 +42,25 @@ body
 
       }
 
-      .card-content{
-        background-color: red;
-      }
+      
 
       .main-heading{
         font-size: 25px;
         font-weight: 700;
+        color: #f3f3f3;
+        
       }
 
       .subtitle-text{
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 400;
+        line-height: 20px;
+        color:hsl(217, 12%, 63%);
       }
 
       form{
         width: 100%;
-        background-color: brown;
+        
         display: flex;
         justify-content: space-between;
         margin-top: 25px;
@@ -66,15 +73,36 @@ body
 
       .radio-lbl{
         display: flex;
-        
+        font-size: 14px;
         align-items: center;
         justify-content: center;
-        background-color: aqua;
+        background-color: #262F38;
         width: 40px;
         height: 40px;
-        
+        color: hsl(217, 12%, 63%);
         border-radius: 100%;
+        cursor: pointer;
+        transform: translateY(-0.075em);
+
         
+      }
+      input[type=radio]:checked +.radio-lbl {
+        background-color: hsl(217, 12%, 63%);
+        color: white;
+      }
+      
+      .radio-lbl:hover{
+        background-color: hsl(25, 97%, 53%);
+        color: #f3f3f3;
+      }
+      .star-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #262F38;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%
       }
 
       .submit-btn{
@@ -85,4 +113,33 @@ body
         border: none;
         font-family: "Overpass", sans-serif;
         font-weight: 700;
+        background-color: hsl(25, 97%, 53%);
+        color: #f3f3f3;
+      }
+
+      .submit-btn:hover{
+        background-color: #f3f3f3;
+        color: hsl(25, 97%, 53%);
+      }
+
+      .ty-illustration{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .rating-notice{
+          background-color: #262F38;
+          display: flex;
+          align-items: center;
+         justify-content: center;
+          margin: 25px auto;
+          width: 170px;
+          padding: 10px;
+          
+          font-size: 14px;
+          border-radius: 100px;
+          color:hsl(25, 97%, 53%);
+
       }
