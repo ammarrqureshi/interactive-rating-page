@@ -18,6 +18,10 @@
 
 ## Overview
 
+Took this mini challenge, just to test my skills. But in the time of Google and Youtube, nothing is limited. Only sky is the limit. Everything can be learnt from this Free University availaible on our finger tips. If you ever need a rating card for any of the project , check it out. This might help.
+
+This file contains all the process, links and tech stack. Enjoy!
+
 ### The challenge
 
 Users should be able to:

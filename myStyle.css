@@ -5,8 +5,12 @@
 body  
 {
   margin : 0;
-  background-color: hsl(216, 12%, 8%);
+  background-image: url('/images/bg-img.jpg');
   font-family: "Overpass", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
 }
 
       .attribution {
@@ -23,7 +27,9 @@ body
       .attribution a {
         color: hsl(217, 12%, 63%);
       }
+      
       .container{
+     
         width: 100%;
         height: 100%;
         display: flex;
@@ -32,6 +38,7 @@ body
 
       }
       .rating-card{
+        
         background-color: #171E28;
         min-width: 280px;
         max-width: 330px;
@@ -113,6 +120,7 @@ body
       }
 
       .submit-btn{
+        cursor: pointer;
         width: 100%;
         text-align: center;
         padding: 15px;
