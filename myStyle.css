@@ -4,13 +4,10 @@
 * { box-sizing: border-box; }
 body  
 {
-  margin : 0;
-  background-image: url('/images/bg-img.jpg');
+  margin : 0 auto;
+  background-color: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
+  
 }
 
       .attribution {
