@@ -28,16 +28,61 @@ body
         position: absolute;
         top: 50%;
         border: 2px solid black;
+        margin: 0 25px;
+        padding: 25px;
+
         transform: translate(0, -50%);
         font-family: "Overpass", sans-serif;
+        border-radius: 20px;
 
       }
 
+      .card-content{
+        background-color: red;
+      }
+
+      .main-heading{
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      .subtitle-text{
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      form{
+        width: 100%;
+        background-color: brown;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
       .radio-btn{
         display: none;
       }
 
+
       .radio-lbl{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
         background-color: aqua;
-        padding: 10px;
+        width: 40px;
+        height: 40px;
+        
+        border-radius: 100%;
+        
+      }
+
+      .submit-btn{
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border-radius: 150px;
+        border: none;
+        font-family: "Overpass", sans-serif;
+        font-weight: 700;
       }
