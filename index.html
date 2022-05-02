@@ -42,34 +42,29 @@
         appreciated to help us improve our offering!
       </p>
       <div class="rating-row">
-        <label  id="rate-1" for="rating" class="rating-btn">
-          <p id="rate-1-number">1</p>
-         <input type="radio" name="rating" class="radio-btn">
-             
-        </label>
-        <label  id="rate-2" for="rating" class="rating-btn">
-          <p id="rate-2-number">2</p>
-         <input type="radio" name="rating" class="radio-btn">
-             
-        </label>
-        <label  id="rate-3" for="rating" class="rating-btn">
-          <p id="rate-3-number">3</p>
-         <input type="radio" name="rating" class="radio-btn">
-             
-        </label>
-        <label  id="rate-4" for="rating" class="rating-btn">
-          <p id="rate-4-number">4</p>
-         <input type="radio" name="rating" class="radio-btn">
-             
-        </label>
-        <label  id="rate-5" for="rating" class="rating-btn">
-          <p id="rate-5-number">5</p>
-         <input type="radio" name="rating" class="radio-btn">
-             
-        </label>
+          <form name="form" class="radio">
+            <input type="radio" id="1" name="rating" value="1" class="radio-btn">
+            <label for="1" class="radio-lbl">1</label>
+
+
+            <input type="radio"  id="2" name="rating" value="2" class="radio-btn">
+            <label for="2" class="radio-lbl">2</label>
+
+            <input type="radio"  id="3" name="rating" value="3" class="radio-btn">
+            <label for="3" class="radio-lbl">3</label>
+
+            <input type="radio"  id="4" name="rating" value="4" class="radio-btn">
+            <label for="4" class="radio-lbl">4</label>
+
+            <input type="radio"  id="5" name="rating" value="5" class="radio-btn">
+            <label for="5" class="radio-lbl">5</label>
+            
+           
+
+          </form> <input type="submit" class="submit-btn" onclick="submitRating(),displayRating()" value="SUBMIT" />
+        
 
       </div>
-      <input type="submit" class="submit-btn" onclick="submitRating()" value="SUBMIT" />
     </div>
 
 
